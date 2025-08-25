@@ -6,6 +6,7 @@ export default function BulkOrderSection() {
     mobile: '',
     email: '',
     date: '',
+    location: '',
     requirements: ''
   });
 
@@ -93,6 +94,7 @@ export default function BulkOrderSection() {
     submitData.append('entry.965648303', formData.email);
     submitData.append('entry.1060525465', formData.date);
     submitData.append('entry.2124947497', formData.requirements);
+    submitData.append('entry.1385398304', formData.location);
 
     let itemsSummary = "";
   if (selectedItems.onasadhya) {
@@ -122,6 +124,7 @@ export default function BulkOrderSection() {
         mobile: '',
         email: '',
         date: '',
+        location: '',
         requirements: ''
       });
       setSelectedItems({
@@ -130,19 +133,13 @@ export default function BulkOrderSection() {
         giftbox: false
       });
     } catch (error) {
-      alert('OOps!!! Something went wrong')
-      setFormData({
-        name: '',
-        mobile: '',
-        email: '',
-        date: '',
-        requirements: ''
-      });
+      alert('OOps!!! Something went wrong');
       setSelectedItems({
         onasadhya : false,
         payasam: false,
         giftbox: false
       });
+      console.log(error)
     }
   };
 
@@ -300,6 +297,36 @@ export default function BulkOrderSection() {
                   min = {getMinDate()}
                 />
               </div>
+
+<div className="mb-3">
+  <label className="form-label text-warning">Location *</label>
+  <div className="d-flex gap-4">
+    <label>
+      <input
+        type="radio"
+        name="location"
+        value="Chennai"
+        checked={formData.location === 'Chennai'}
+        onChange={handleInputChange}
+        required
+      />{' '}
+      Chennai
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="location"
+        value="Bengaluru"
+        checked={formData.location === 'Bengaluru'}
+        onChange={handleInputChange}
+        required
+      />{' '}
+      Bengaluru
+    </label>
+  </div>
+</div>
+
+
               <div className="mb-4">
                 <label htmlFor="requirements" className="form-label text-warning">Any other userful information</label>
                 <textarea 

@@ -23,15 +23,24 @@ export default function TermsModal() {
                 </h5>
                 
                 <h4 className="text-warning">VALIDITY</h4>
-                <p className="mb-3"> This voucher is valid untill October 31,2025.</p>
+                <p className="mb-3">This voucher is valid till 31st October 2025.</p>
                 <h4 className="text-warning">REDEMPTION</h4>
-                <ul className="list-unstyled" data-testid="list-gift-voucher-terms">
-                  <li className="mb-2">• This voucher is redeemable at Kappa Chakka Kandhari restaurants in Chennai and Bangalore, only on weekdays - for lunch or dinner.</li>
-                  <li className="mb-2">• This voucher cannot be redeemed for cash.</li>
-                  <li className="mb-2">• This voucher cannot be combined with any other vouchers or offers.</li>
-                  <li className="mb-2">• This voucher is not applicable on public holidays.</li>
-                  <li className="mb-2">• Please submit this voucher at the restaurant desk before placing the order.</li>
-                  <li className="mb-2">• This Gift voucher is non- transferable and cannot be resold.</li>
+                <ul className="list-unstyled text-xs md:text-sm" data-testid="list-gift-voucher-terms">
+                  <li className="mb-2">• This voucher entitles the customer Rs.750/- (Rupees seven hundred and fifty only) off on dine-in bill at any Kappa Chakka Kandhari restaurant in the cities of Chennai & Bangalore.</li>
+                  <li className="mb-2">• This voucher is not redeemable on takeaway or online orders.</li>
+                  <li className="mb-2">• This voucher is redeemable only during weekdays (Monday to Friday) and cannot be redeemed on weekend days during the said validity period.</li>
+                  <li className="mb-2">• This voucher cannot be redeemed during festive days or public holidays.</li>
+                  <li className="mb-2">• Not more than 1 individual voucher of Rs.750/- each can be clubbed together for redemption against a single dine-in bill.</li>
+                  <li className="mb-2">• This voucher is to be presented at the restaurant in its physical form before billing in order to be redeemed and the same will be retained by the restaurant.</li>
+                  <li className="mb-2">• No request for cash in lieu of the voucher or its value will be entertained. </li>
+                  <li className="mb-2">• This voucher cannot be clubbed with any other scheme or offer presented by Kappa Chakka Kandhari Foods Pvt. Ltd. during the said validity period. </li>
+                  <li className="mb-2">• Kappa Chakka Kandhari Foods Pvt Ltd. reserves the rights to withdraw / alter / modify / change the rules governing the redemption of the voucher and whatsoever offered here under, at any time without any liability to the customer. </li>
+                  <li className="mb-2">• Kappa Chakka Kandhari Foods Pvt Ltd. reserves the rights to run / promote other offers & schemes during the same validity period of this voucher.</li>
+                  <li className="mb-2">• Acceptance or rejection of the voucher submitted by the customer shall remain at the sole discretion of Kappa Chakka Kandhari Foods Pvt. Ltd.</li>
+                  <li className="mb-2">• The decision of Kappa Chakka Kandhari Foods Pvt. Ltd. shall remain final and binding on all concerned parties in the instance of any dispute arising with regards to this offer.</li>
+                  <li className="mb-2">• All disputes subject to the jurisdiction of Courts in Chennai.</li>
+
+                
                 </ul>
             
               </div>
