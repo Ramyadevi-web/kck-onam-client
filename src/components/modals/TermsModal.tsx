@@ -79,15 +79,15 @@ export default function TermsModal() {
               <div className="p-3">
                 <h6 className="text-warning" data-testid="text-onam-contest-rules-title">Contest Rules & Regulations</h6>
                 <ul className="list-unstyled" data-testid="list-onam-contest-terms">
-                  <li className="mb-2">• Contest is open to all customers who place orders during Onam season (Aug 20 - Sep 10, 2025)</li>
-                  <li className="mb-2">• Share your Onasadhya experience on social media with #KeralafeastOnam</li>
-                  <li className="mb-2">• Tag @KeralaFeast and 3 friends to be eligible</li>
-                  <li className="mb-2">• Winners will be announced on September 15, 2025</li>
-                  <li className="mb-2">• Prizes include: 1st Prize - Free Onasadhya for family (4 people)</li>
-                  <li className="mb-2">• 2nd Prize - Gift box worth ₹500 | 3rd Prize - Payasam combo pack</li>
-                  <li className="mb-2">• Multiple entries allowed, but one prize per family</li>
-                  <li className="mb-2">• Contest is subject to Instagram and Facebook terms of service</li>
-                  <li className="mb-2">• Winners must claim prizes within 30 days of announcement</li>
+                  <li className="mb-2">•	The entry for Photograph to Postcards contest is acceptable only on 4th & 5th, September 2025.</li>
+                  <li className="mb-2">• The contest is open for anyone celebrating Onam at home</li>
+                  <li className="mb-2">• The employees of Kappa Chakka Kandhari or family members are not eligible to participate in the contest.</li>
+                  <li className="mb-2">• The entries that do not adhere to the terms and conditions of contest will be eliminated.</li>
+                  <li className="mb-2">• Multiple entries are not allowed for the contest.</li>
+                  <li className="mb-2">• Entries will be judged based on the creativity, relevance, and originality.</li>
+                  <li className="mb-2">• The winners of the contest will receive an official email. </li>
+                  <li className="mb-2">• Entries that do not comply with these terms will be disqualified.</li>
+                  <li className="mb-2">• Any disputes will be subject to the jurisdiction of courts.</li>
                 </ul>
                 <p className="mt-3 text-muted small" data-testid="text-onam-contest-disclaimer">
                   Contest decisions are final. No correspondence will be entertained regarding contest results.

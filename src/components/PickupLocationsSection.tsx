@@ -133,8 +133,8 @@ export default function PickupLocationsSection() {
               >
                 Gift Voucher
               </a> 
-              {/* |  */}
-              {/* <a 
+              | 
+              <a 
                 href="#" 
                 className="terms-link" 
                 data-bs-toggle="modal" 
@@ -142,7 +142,7 @@ export default function PickupLocationsSection() {
                 data-testid="link-onam-contest"
               >
                 Onam Contest
-              </a> */}
+              </a>
             </p>
           </div>
         </div>
