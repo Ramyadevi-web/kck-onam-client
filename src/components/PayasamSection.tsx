@@ -4,25 +4,25 @@ export default function PayasamSection() {
       name: 'Palada Payasam',
       price: '₹500',
       image: '/images/palada.png',
-      description: 'Made with rice flakes or ada, simmered in milk and sugar, generously garnished with cashew.'
+      description: 'Slow cooked rice ada in creamy milk and sweetened with sugar, a classic festive delicacy.'
     },
     {
       name: 'Ada Pradhaman',
       price: '₹500',
       image: '/images/ada.png',
-      description: 'A sweet treat of rice bits (ada) simmered with jaggery and coconut milk.'
+      description: 'A divine delight symbolising tradition and celebration, Thick rice ada cooked in rich and creamy coconut milk and sweetened with Marayoor Jaggery. Kadhai pazham - native Kerala banana added to enhance the aroma of the pradhaman'
     },
     {
       name: 'Chakka Pradhaman',
       price: '₹700',
       image: '/images/chakka.png',
-      description: 'A traditional payasam of Chakka Varatti or jackfruit pulp, slow cooked in coconut milk and sweetened with jaggery'
+      description: 'Slow cooked  ripened Jackfruit with Marayoor jaggery, and rich and creamy coconut milk, much loved fruit in every house of Kerala and joining the Onam Celebrations'
     },
     {
       name: 'Parippu Payasam',
       price: '₹500',
       image: '/images/parippu.png',
-      description: 'A rich creamy dessert made with whole green moong and jaggery, cooked in coconut milk, flavoured with cardamom and topped with coconut bits'
+      description: 'A divine blend of roasted moong dal cooked to perfection with Marayoor jaggery and coconut milk, a classic festive delicacy on Onam.'
     }
   ];
 
