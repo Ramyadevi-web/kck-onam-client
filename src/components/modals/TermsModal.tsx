@@ -79,7 +79,7 @@ export default function TermsModal() {
               <div className="p-3">
                 <h6 className="text-warning" data-testid="text-onam-contest-rules-title">Contest Rules & Regulations</h6>
                 <ul className="list-unstyled" data-testid="list-onam-contest-terms">
-                  <li className="mb-2">•	The entry for Photograph to Postcards contest is acceptable only on 4th & 5th, September 2025.</li>
+                  <li className="mb-2">• The entry for Photograph to Postcards contest is acceptable only on 4th & 5th, September 2025.</li>
                   <li className="mb-2">• The contest is open for anyone celebrating Onam at home</li>
                   <li className="mb-2">• The employees of Kappa Chakka Kandhari or family members are not eligible to participate in the contest.</li>
                   <li className="mb-2">• The entries that do not adhere to the terms and conditions of contest will be eliminated.</li>
