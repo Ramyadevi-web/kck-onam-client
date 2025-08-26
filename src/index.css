@@ -256,6 +256,7 @@
 
 #img-payasam-combo{
   height: 75% !important;
+  object-fit: cover;
 }
 
 .combo{
