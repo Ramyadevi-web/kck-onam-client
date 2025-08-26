@@ -53,14 +53,14 @@ export default function PayasamSection() {
           </div>
           <div className="col-md-6" id="payasam-div">
             <h1 className="section-heading text-center">Onam Special Payasam</h1>
-            <p className="text-warning text-center mb-1">500 ML served fresh.</p>
-            <p className="text-warning text-center mb-4">Available for take-away on Sept 4 & 5, 2025.</p>
+            <p className="text-warning text-center text-xs md:text-lg">500 ML SERVED FRESH.</p>
+            <p className="text-warning text-center mb-4 text-xs md:text-lg">Available for take-away on Sept 4 & 5, 2025.</p>
             {payasamProducts.map((product, index) => (
               <div key={index} className="mb-5">
                 <h5 className="text-warning">
                   {product.name} - <span className="text-[rgb(234,91,33)]">{product.price}</span>
                 </h5>
-                <p>{product.description}</p>
+                <p className="text-lg">{product.description}</p>
               </div>
             ))}
           </div>
@@ -80,10 +80,10 @@ export default function PayasamSection() {
               className="img-fluid mb-2"
               data-tesid={`img-payasam-${index}`}
             />
-            <h5 className="text-warning">
+            <h5 className="text-warning mb-1">
               {product.name} - <span className="text-[rgb(234,91,33)]">{product.price}</span>
             </h5>
-            <p>{product.description}</p>
+            <p className="text-xs px-3">{product.description}</p>
           </div>
         ))}
       </div>
@@ -104,10 +104,10 @@ export default function PayasamSection() {
                   </div>
                 </div>
       </div>
-      <div className="flex flex-col md:flex-row text-[9px] md:text-base ps-5 pt-1 md:pt-0 overflow-hidden combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
-                <div className="fw-bold">Combo Pack Special: Get all 4 varieties for &nbsp;
+      <div className="flex flex-col md:flex-row text-[9px] md:text-base px-3 md:px-5 py-2 overflow-hidden combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
+                <strong className="fw-bold">Combo Pack Special: Get all 4 varieties for &nbsp;
                  <span className="text-[rgb(234,91,33)] line-through">₹2200</span>&nbsp;&nbsp;
-                  <span className="text-black">₹2000</span> </div> 
+                  <span className="text-black">₹2000</span> </strong> 
                 {/* <small className="text-decoration-line-through">(Save ₹60!)</small> */}
       </div>
       </div>

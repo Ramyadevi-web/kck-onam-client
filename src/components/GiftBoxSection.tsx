@@ -28,14 +28,26 @@ export default function GiftBoxSection() {
             <h1 className="section-heading" data-testid="text-gift-box-title">KCK Gift Box</h1>
             <span className='flex items-center text-[rgb(231,91,33)] text-lg font-light'>(₹1900)</span>
             </div>
-            <p className="text-warning mb-3 text-center" data-testid="text-gift-box-availability">Available for take-away on Sept 4 & 5, 2025</p>
-            <p className="description mb-4" data-testid="text-gift-box-description">
+            <p className="text-warning mb-3 text-center text-xs md:text-lg" data-testid="text-gift-box-availability">Available for take-away on Sept 4 & 5, 2025</p>
+            <p className="description mb-4 text-xs px-3 md:text-lg" data-testid="text-gift-box-description">
               A special gift in a gift box, with the finest spices sourced from the heart of Kerala. Ranging from mace to marayoor jaggery, 8 condiments to spice up your cooking.
               Additionally, 2 Onam gift vouchers of INR 750 each, which can be redeemed on your next dine-in with Kappa Chakka Kandhari- Chennai & Bangalore.
             </p>
-            <div className="mb-4 flex  justify-center">
-              <a href="https://kappachakkakandhari.uengage.in/" className="brand-btn whitespace-nowrap mb-2 sm:mb-3 me-2 ms-2 text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl" data-testid="button-book-gift-bengaluru">Book Now - Bengaluru</a>
-              <a href="https://kappachakkakandhari.uengage.in/" className="brand-btn whitespace-nowrap  mb-2 sm:mb-3 me-2 ms-2 text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl" data-testid="button-book-gift-chennai">Book Now - Chennai</a>
+                        <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
+              <a 
+                href="https://kappachakkakandhari.uengage.in/" rel="noopener noreferrer" target="_blank" 
+                className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
+                data-testid="button-book-bengaluru"
+              >
+                Book Now - Bengaluru
+              </a>
+              <a 
+                href="https://kappachakkakandhari.uengage.in/" rel="noopener noreferrer" target="_blank"
+                className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
+                data-testid="button-book-chennai"
+              >
+                Book Now - Chennai
+              </a>
             </div>
 
             <div className="box-content ">

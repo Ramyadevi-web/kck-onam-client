@@ -39,27 +39,27 @@ export default function OnasadhyaSection() {
                <span className='flex items-center text-[rgb(231,91,33)] text-lg font-light'>(₹8000)</span>
             </div>
            
-            <h3 className="text-[rgb(255,188,12)] mb-1 flex justify-center  text-xs sm:text-sm md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Serves 5–6 pax.</h3>
-             <h3 className="text-[rgb(255,188,12)] mb-3 flex justify-center  text-xs sm:text-sm md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Available for take-away on Sept 4 & 5, 2025.</h3>
-            <p className="description  mb-4" data-testid="text-onasadhya-description">
+            <p className="text-[rgb(255,188,12)] flex justify-center text-sm md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Serves 5–6 pax.</p>
+             <p className="text-[rgb(255,188,12)] mb-3 flex justify-center text-sm md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Available for take-away on Sept 4 & 5, 2025.</p>
+            <p className="description mb-4 text-xs px-3 md:text-lg" data-testid="text-onasadhya-description">
               Some festivals are meant to be celebrated where they began - at home! 
                This Onam, unwrap our carefully curated vegetarian delicacies, prepared by seasoned Kerala cooks and packed with care. 
               Every dish, a quiet reminder of how tradition meant it to be. 
             </p>
-            <div className='flex justify-center mb-4 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl'>
+            <div className='flex justify-center mb-4 text-[0.800rem]  md:text-base lg:text-lg xl:text-xl'>
               Celebrate Onam, the Kappa Chakka Kandhari way.
             </div>
-            <div className="mb-4 flex justify-center">
+            <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
               <a 
-                href="https://kappachakkakandhari.uengage.in/" 
-                className="brand-btn whitespace-nowrap mb-2 sm:mb-3 me-2 ms-2 text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
+                href="https://kappachakkakandhari.uengage.in/"  rel="noopener noreferrer" target="_blank"
+                className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
                 data-testid="button-book-bengaluru"
               >
                 Book Now - Bengaluru
               </a>
               <a 
-                href="https://kappachakkakandhari.uengage.in/" 
-                className="brand-btn whitespace-nowrap mb-2 sm:mb-3 me-2 ms-2 text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
+                href="https://kappachakkakandhari.uengage.in/"  rel="noopener noreferrer" target="_blank"
+                className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
                 data-testid="button-book-chennai"
               >
                 Book Now - Chennai
@@ -67,7 +67,7 @@ export default function OnasadhyaSection() {
             </div>
 
             <div className="box-content">
-              <h4 className="text-[rgb(255,188,12)] mb-4 text-center" data-testid="text-box-content-title">Jumbo KCK Onasadhya(26 Items)</h4>
+              <h4 className="text-[rgb(255,188,12)] mb-0 md:mb-4 text-center" data-testid="text-box-content-title">Jumbo KCK Onasadhya(26 Items)</h4>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-2">
                 {
                   mainItems.map((item, index) => {

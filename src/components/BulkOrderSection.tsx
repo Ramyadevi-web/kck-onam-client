@@ -157,18 +157,18 @@ export default function BulkOrderSection() {
           </div>
           <div className="col-lg-6">
             <h1 className="section-heading mb-2 flex justify-center" data-testid="text-bulk-order-title">Bulk Order</h1>
-            <p className="description mb-2" data-testid="text-bulk-order-description">
+            <p className="description text-xs px-3 md:text-lg mb-2" data-testid="text-bulk-order-description">
               Celebrate the spirit of Onam with your friends, family, or colleagues - whether at home or at your workplace. 
               Choose from our specially curated Sadhya,  just the way you like it, or indulge in our delicious varieties of payasam.
               And for your dear ones who are far away, surprise them with the KCK Gift Box - featuring 8 handpicked condiments from Kerala, packed with love and tradition.
             </p>
 
-             <p className="description mb-4" data-testid="text-bulk-order-description">
+             <p className="description mb-4 text-xs px-3 md:text-lg" data-testid="text-bulk-order-description">
               Banquet orders are open for a limited period so book now to celebrate Onam the Kappa Chakka Kandhari way.
             </p>
             
          
-            <form onSubmit={handleSubmit} data-testid="form-bulk-order">
+            <form onSubmit={handleSubmit} data-testid="form-bulk-order" className='mx-3'>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label text-warning">Full Name *</label>
                 <input 

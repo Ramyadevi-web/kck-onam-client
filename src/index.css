@@ -189,7 +189,6 @@
 }
 
 .description{
-  font-size: 1.0rem;
   font-weight: 300;
 }
 
@@ -289,7 +288,7 @@
 .pickup-heading {
   color: rgb(255, 188, 12);
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 30px;
 }
