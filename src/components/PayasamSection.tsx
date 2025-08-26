@@ -3,25 +3,25 @@ export default function PayasamSection() {
     {
       name: 'Palada Payasam',
       price: '₹500',
-      image: '/images/palada.png',
+      image: '/images/palada.webp',
       description: 'Slow cooked rice ada in creamy milk and sweetened with sugar, a classic festive delicacy.'
     },
     {
       name: 'Ada Pradhaman',
       price: '₹500',
-      image: '/images/ada.png',
-      description: 'A divine delight symbolising tradition and celebration, Thick rice ada cooked in rich and creamy coconut milk and sweetened with Marayoor Jaggery. Kadhai pazham - native Kerala banana added to enhance the aroma of the pradhaman'
+      image: '/images/ada.webp',
+      description: 'A divine delight symbolising tradition and celebration, Thick rice ada cooked in rich and creamy coconut milk and sweetened with Marayoor jaggery. Kadhai pazham - native Kerala banana added to enhance the aroma of the pradhaman'
     },
     {
       name: 'Chakka Pradhaman',
       price: '₹700',
-      image: '/images/chakka.png',
-      description: 'Slow cooked  ripened Jackfruit with Marayoor jaggery, and rich and creamy coconut milk, much loved fruit in every house of Kerala and joining the Onam Celebrations'
+      image: '/images/chakka.webp',
+      description: 'Slow cooked  ripened jackfruit the most loved fruit in every house of kerala, garnished with Marayoor jaggery, and rich creamy coconut.'
     },
     {
       name: 'Parippu Payasam',
       price: '₹500',
-      image: '/images/parippu.png',
+      image: '/images/parippu.webp',
       description: 'A divine blend of roasted moong dal cooked to perfection with Marayoor jaggery and coconut milk, a classic festive delicacy on Onam.'
     }
   ];
@@ -70,7 +70,7 @@ export default function PayasamSection() {
       {/* ✅ Mobile view (stacked image + text per item) */}
       <div className="d-block d-md-none col-12">
         <h1 className="section-heading text-center">Onam Special Payasam</h1>
-        <p className="text-warning text-center mb-1">500 ML served fresh.</p>
+        <p className="text-warning text-center mb-1">500 ML SERVED FRESH.</p>
         <p className="text-warning text-center mb-4 text-sm">Available for take-away on Sept 4 & 5, 2025.</p>
         {payasamProducts.map((product, index) => (
           <div key={index} className="mb-4 text-center">
@@ -92,15 +92,14 @@ export default function PayasamSection() {
      <div className="col-12 col-md-6 mb-3 mb-md-0">
                 <div className="payasam-card" data-testid="card-payasam-combo">
                   <img 
-                    src="/images/combo.png" 
+                    src="/images/combo.webp" 
                     alt="Payasam Combo Pack - All varieties"
                     data-testid="img-payasam-combo"
                     id="img-payasam-combo"
                   />
                   <div className="px-3">
                     <h6 className="text-warning text-center" data-testid="text-payasam-combo-name">Payasam Combo (All 4)</h6>
-                    {/* <small className="text-decoration-line-through text-muted me-2" data-testid="text-payasam-combo-original-price">₹460</small> */}
-                    {/* <strong className="text-[rgb(234,91,33)]" data-testid="text-payasam-combo-price">₹400</strong> */}
+                    <p className="text-warning text-center mb-1">500 ML x 4 SERVED FRESH.</p>
                   </div>
                 </div>
       </div>

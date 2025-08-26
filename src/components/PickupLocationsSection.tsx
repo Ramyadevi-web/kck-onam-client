@@ -44,7 +44,8 @@ export default function PickupLocationsSection() {
   return (
     <section id="pickup" className="pickup-section">
       <div className="container">
-        <h2 className="pickup-heading text-[9px] md:text-3xl leading-snug" data-testid="text-pickup-heading">Pick-ups available on September 4 & 5, 2025</h2>
+        <h2 className="pickup-heading text-[9px] md:text-3xl leading-snug" data-testid="text-pickup-heading">Pick-ups available on</h2>
+        <h2 className="pickup-heading text-[9px] md:text-3xl leading-snug"> September 4 & 5, 2025</h2>
         <hr className="border-warning border-2 opacity-75 mx-auto" style={{width: '100px'}} />
         
         {/* Chennai Locations */}
@@ -133,7 +134,7 @@ export default function PickupLocationsSection() {
               >
                 Gift Voucher
               </a> 
-              | 
+              {/* | 
               <a 
                 href="#" 
                 className="terms-link  text-[10.5px] md:text-base" 
@@ -142,7 +143,7 @@ export default function PickupLocationsSection() {
                 data-testid="link-onam-contest"
               >
                 Onam Contest
-              </a>
+              </a> */}
             </p>
           </div>
         </div>

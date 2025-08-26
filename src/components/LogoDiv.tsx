@@ -10,13 +10,13 @@ export default function LogoDiv() {
         <p className="font-300 text-xl">the Kappa Chakka Kandhari</p>
         <p className="font-300 text-xl"> way...</p>     */}
         <img
-          src="/images/celeb.png"
+          src="/images/celeb.webp"
           alt="KCK Logo"
           className="w-[80%] sm:w-[30%] object-contain"
         />
         
         <img
-          src="/images/kck_logo.png"
+          src="/images/kck_logo.webp"
           alt="KCK Logo"
           className="h-56  w-56 object-contain"
         />

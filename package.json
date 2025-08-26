@@ -18,7 +18,8 @@
     "postcss": "^8.x",
     "tailwindcss": "^3.x",
     "typescript": "^5.x",
-    "vite": "^4.x"
+    "vite": "^4.x",
+    "vite-imagetools": "^8.0.0"
   },
   "scripts": {
     "dev": "vite",

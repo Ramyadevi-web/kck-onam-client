@@ -33,7 +33,7 @@ export default function Navigation({ notificationVisible, activeSection }: Navig
       <div className="container mx-auto flex items-center justify-between px-4 py-2">
         <a href="#logo">
           <img
-          src="/images/kck_logo.png"
+          src="/images/kck_logo.webp"
           alt="logo"
           className="p-1"
           style={{ height: '70px' }}

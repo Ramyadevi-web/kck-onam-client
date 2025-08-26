@@ -149,7 +149,7 @@ export default function BulkOrderSection() {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img 
-              src="\images\banquets.png" 
+              src="\images\banquets.webp" 
               alt="Professional catering service for bulk orders" 
               className="img-fluid rounded-3 shadow-lg"
               data-testid="img-bulk-order"

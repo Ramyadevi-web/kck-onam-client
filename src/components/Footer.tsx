@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="row align-items-center">
           <div className="col-md-6 mb-4">
             <img 
-              src="images/kck_logo.png" 
+              src="images/kck_logo.webp" 
               alt="Kerala Feast Logo" 
               className="img-fluid mb-3" 
               style={{maxHeight: '150px'}}

@@ -27,7 +27,7 @@ export default function OnasadhyaSection() {
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img 
-              src="/images/leaf.png" 
+              src="/images/leaf.webp " 
               alt="Traditional Kerala Onasadhya feast on banana leaf" 
               className="img-fluid rounded-3 shadow-lg"
               data-testid="img-onasadhya-feast"
@@ -67,7 +67,7 @@ export default function OnasadhyaSection() {
             </div>
 
             <div className="box-content">
-              <h4 className="text-[rgb(255,188,12)] mb-0 md:mb-4 text-center" data-testid="text-box-content-title">Jumbo KCK Onasadhya(26 Items)</h4>
+              <h4 className="text-[rgb(255,188,12)] mb-0 md:mb-4 text-center" data-testid="text-box-content-title">Jumbo KCK Onasadhya (26 Items)</h4>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-2">
                 {
                   mainItems.map((item, index) => {
