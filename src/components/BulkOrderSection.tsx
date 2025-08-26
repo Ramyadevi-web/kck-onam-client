@@ -156,7 +156,7 @@ export default function BulkOrderSection() {
             />
           </div>
           <div className="col-lg-6">
-            <h1 className="section-heading mb-2" data-testid="text-bulk-order-title">Bulk Order</h1>
+            <h1 className="section-heading mb-2 flex justify-center" data-testid="text-bulk-order-title">Bulk Order</h1>
             <p className="description mb-2" data-testid="text-bulk-order-description">
               Celebrate the spirit of Onam with your friends, family, or colleagues - whether at home or at your workplace. 
               Choose from our specially curated Sadhya,  just the way you like it, or indulge in our delicious varieties of payasam.

@@ -179,6 +179,9 @@
   background-color: var(--section-black);
 }
 
+#payasam-div{
+  margin-top: 65px !important;
+}
 .section-heading {
   color: rgb(255, 188, 12);
   font-size: 2.0rem;
@@ -259,8 +262,6 @@
 .combo{
   background-image: url('/images/stroke.png');
   color: black;
-  width: 110%;
-  margin-top: 150px;
 }
 
 .payasam-div{
@@ -391,7 +392,7 @@
   }
   
   .main-section {
-    padding: 100px 0 60px;
+    padding: 20px 0 60px;
   }
   
   .payasam-card img {

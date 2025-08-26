@@ -38,8 +38,8 @@ export default function GiftBoxSection() {
               <a href="https://kappachakkakandhari.uengage.in/" className="brand-btn whitespace-nowrap  mb-2 sm:mb-3 me-2 ms-2 text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl" data-testid="button-book-gift-chennai">Book Now - Chennai</a>
             </div>
 
-            <div className="box-content">
-              <h4 className="text-warning mb-4" data-testid="text-gift-box-content-title">Gift Box Contents</h4>
+            <div className="box-content ">
+              <h4 className="text-warning  flex justify-center mb-4" data-testid="text-gift-box-content-title">Gift Box Contents</h4>
               <div className="row">
                 <div className="col-md-6">
                   {giftBoxContents.slice(0, 5).map((item, index) => (

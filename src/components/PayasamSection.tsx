@@ -27,28 +27,67 @@ export default function PayasamSection() {
   ];
 
   return (
-    <section id="payasam" className="main-section">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6 mb-4 mb-lg-0">
+   <section id="payasam" className="main-section">
+  <div className="container">
+    <div className="row align-items-center">
+      
+      {/* ✅ Desktop view (images left, details right) */}
+      <div className="d-none d-md-flex col-12">
+        <div className="row w-100">
+          <div className="col-md-6">
             <div className="row">
               {payasamProducts.map((product, index) => (
-                <div key={index} className="col-md-6">
-                  {/* <div className="payasam-card" data-testid={`card-payasam-${index}`}> */}
-                    <img className="mx-auto"
-                      src={product.image} 
-                      alt={`${product.name} - Traditional Kerala dessert`}
-                      id={`img-payasam-${index}`}
-                      data-testid={`img-payasam-${index}`}
-                    />
-                    <div className="px-3 flex justify-center">
-                      <h6 className="text-warning"  data-testid={`text-payasam-name-${index}`}>{product.name}</h6>
-                      {/* <small className="text-muted" data-testid={`text-payasam-price-${index}`}>{product.price}</small> */}
-                    </div>
-                  {/* </div> */}
+                <div key={index} className="col-md-6 mb-4 text-center">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="img-fluid"
+                    id={`img-payasam-${index}`}
+                  />
+                  <h6 className="text-warning mt-2" data-testid={`text-payasam-name-${index}`}>
+                    {product.name}
+                  </h6>
                 </div>
               ))}
-              <div className="col-md-12">
+            </div>
+          </div>
+          <div className="col-md-6" id="payasam-div">
+            <h1 className="section-heading text-center">Onam Special Payasam</h1>
+            <p className="text-warning text-center mb-4">500 ML bottle - Available for take-away on Sept 4 & 5, 2025.</p>
+            {payasamProducts.map((product, index) => (
+              <div key={index} className="mb-5">
+                <h5 className="text-warning">
+                  {product.name} - <span className="text-[rgb(234,91,33)]">{product.price}</span>
+                </h5>
+                <p>{product.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ✅ Mobile view (stacked image + text per item) */}
+      <div className="d-block d-md-none col-12">
+        <h1 className="section-heading text-center">Onam Special Payasam</h1>
+        <p className="text-warning text-center mb-4">500 ML bottle - Available for take-away on Sept 4 & 5, 2025.</p>
+        {payasamProducts.map((product, index) => (
+          <div key={index} className="mb-4 text-center">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="img-fluid mb-2"
+              data-tesid={`img-payasam-${index}`}
+            />
+            <h5 className="text-warning">
+              {product.name} - <span className="text-[rgb(234,91,33)]">{product.price}</span>
+            </h5>
+            <p>{product.description}</p>
+          </div>
+        ))}
+      </div>
+
+     <div className="flex flex-col flex-md-row items-center">
+     <div className="col-12 col-md-6 mb-3 mb-md-0">
                 <div className="payasam-card" data-testid="card-payasam-combo">
                   <img 
                     src="/images/combo.png" 
@@ -62,35 +101,18 @@ export default function PayasamSection() {
                     {/* <strong className="text-[rgb(234,91,33)]" data-testid="text-payasam-combo-price">₹400</strong> */}
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 mt-2  lg:mt-[-50px]">
-            <h1 className="section-heading text-center" data-testid="text-payasam-title">Onam Special Payasam</h1>
-            <p className="text-warning mb-3 text-center" data-testid="text-payasam-availability">500 ML bottle - Available for take-away on Sept 4 & 5, 2025.</p>
-            
-            <div className="mb-4">
-              {payasamProducts.map((product, index) => (
-                <div key={index} className="mb-3 payasam-content">
-                  <h5 className="text-warning" data-testid={`text-payasam-detail-name-${index}`}>{product.name} - <span className="text-[rgb(234,91,33)]">{product.price}</span></h5>
-                  <p className="mb-3" data-testid={`text-payasam-detail-description-${index}`}>{product.description}</p>
-                </div>
-              ))}
-              
-            <div className="combo bg-cover bg-center bg-no-repeat px-5 py-2" data-testid="alert-combo-special">
-                <strong>Combo Pack Special: Get all 4 varieties for &nbsp;
-                 <span className="text-[rgb(234,91,33)] line-through">₹2200</span>&nbsp;&nbsp;
-                  <span className="text-black">₹2000</span> </strong> 
-                {/* <small className="text-decoration-line-through">(Save ₹60!)</small> */}
-              </div>
-            </div>
-            
-            <div className="flex justify-center">
-              <a href="https://kappachakkakandhari.uengage.in/" className="brand-btn me-3 mb-2" data-testid="button-order-payasam">Order Now</a>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+      <div className="flex flex-col md:flex-row text-[9px] md:text-base ps-5 pt-1 md:pt-0 overflow-hidden combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
+                <div className="fw-bold">Combo Pack Special: Get all 4 varieties for &nbsp;
+                 <span className="text-[rgb(234,91,33)] line-through">₹2200</span>&nbsp;&nbsp;
+                  <span className="text-black">₹2000</span> </div> 
+                {/* <small className="text-decoration-line-through">(Save ₹60!)</small> */}
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   );
 }
