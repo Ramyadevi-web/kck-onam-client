@@ -105,7 +105,7 @@ export default function PayasamSection() {
                 </div>
       </div>
       <div className="flex flex-col md:flex-row text-[9px] md:text-base px-3 md:px-5 py-2 overflow-hidden combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
-                <strong className="fw-bold">Combo Pack Special: Get all 4 varieties for &nbsp;
+                <strong className="font-bold !px-2 md:!px-4">Combo Pack Special: Get all 4 varieties for &nbsp;
                  <span className="text-[rgb(234,91,33)] line-through">₹2200</span>&nbsp;&nbsp;
                   <span className="text-black">₹2000</span> </strong> 
                 {/* <small className="text-decoration-line-through">(Save ₹60!)</small> */}

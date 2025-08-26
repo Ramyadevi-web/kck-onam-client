@@ -122,11 +122,11 @@ export default function PickupLocationsSection() {
         {/* Terms Bar */}
         <div className="terms-bar">
           <div className="container">
-            <p className="mb-0" data-testid="text-terms-bar">
+            <p className="mb-0 text-[10.5px] md:text-base" data-testid="text-terms-bar">
               Terms and Conditions - 
               <a 
                 href="#" 
-                className="terms-link" 
+                className="terms-link  text-[10.5px] md:text-base" 
                 data-bs-toggle="modal" 
                 data-bs-target="#giftVoucherModal"
                 data-testid="link-gift-voucher"
@@ -136,7 +136,7 @@ export default function PickupLocationsSection() {
               | 
               <a 
                 href="#" 
-                className="terms-link" 
+                className="terms-link  text-[10.5px] md:text-base" 
                 data-bs-toggle="modal" 
                 data-bs-target="#onamContestModal"
                 data-testid="link-onam-contest"
