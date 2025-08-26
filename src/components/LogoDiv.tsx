@@ -12,13 +12,13 @@ export default function LogoDiv() {
         <img
           src="/images/celeb.png"
           alt="KCK Logo"
-          className="mt-3 w-[70%] sm:w-[30%] object-contain"
+          className="w-[80%] sm:w-[30%] object-contain"
         />
         
         <img
           src="/images/kck_logo.png"
           alt="KCK Logo"
-          className="h-56 mt-3 w-56 object-contain"
+          className="h-56  w-56 object-contain"
         />
          
 

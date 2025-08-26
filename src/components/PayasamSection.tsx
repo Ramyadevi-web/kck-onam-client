@@ -53,7 +53,8 @@ export default function PayasamSection() {
           </div>
           <div className="col-md-6" id="payasam-div">
             <h1 className="section-heading text-center">Onam Special Payasam</h1>
-            <p className="text-warning text-center mb-4">500 ML bottle - Available for take-away on Sept 4 & 5, 2025.</p>
+            <p className="text-warning text-center mb-1">500 ML served fresh.</p>
+            <p className="text-warning text-center mb-4">Available for take-away on Sept 4 & 5, 2025.</p>
             {payasamProducts.map((product, index) => (
               <div key={index} className="mb-5">
                 <h5 className="text-warning">
@@ -69,7 +70,8 @@ export default function PayasamSection() {
       {/* ✅ Mobile view (stacked image + text per item) */}
       <div className="d-block d-md-none col-12">
         <h1 className="section-heading text-center">Onam Special Payasam</h1>
-        <p className="text-warning text-center mb-4">500 ML bottle - Available for take-away on Sept 4 & 5, 2025.</p>
+        <p className="text-warning text-center mb-1">500 ML served fresh.</p>
+        <p className="text-warning text-center mb-4 text-sm">Available for take-away on Sept 4 & 5, 2025.</p>
         {payasamProducts.map((product, index) => (
           <div key={index} className="mb-4 text-center">
             <img
