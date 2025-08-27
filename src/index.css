@@ -255,7 +255,10 @@
 } 
 
 #img-payasam-combo{
-  height: 75% !important;
+  width: 100%;
+  aspect-ratio: 4 /3;
+  height: auto;
+  display: block;
   object-fit: cover;
 }
 
