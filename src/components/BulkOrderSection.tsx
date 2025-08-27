@@ -146,8 +146,8 @@ export default function BulkOrderSection() {
   return (
     <section id="bulk-order" className="main-section">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6 mb-4 mb-lg-0">
+        <div className="row align-items-start">
+          <div className="col-lg-6 mb-4 mb-lg-0  flex items-center">
             <img 
               src="\images\banquets.webp" 
               alt="Professional catering service for bulk orders" 
