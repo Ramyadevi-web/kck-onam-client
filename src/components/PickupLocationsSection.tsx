@@ -124,7 +124,7 @@ export default function PickupLocationsSection() {
         <div className="terms-bar">
           <div className="container">
             <p className="mb-0 text-[10.5px] md:text-base" data-testid="text-terms-bar">
-              Terms and Conditions - 
+              *Terms and Conditions - 
               <a 
                 href="#" 
                 className="terms-link  text-[10.5px] md:text-base" 
@@ -143,7 +143,10 @@ export default function PickupLocationsSection() {
                 data-testid="link-onam-contest"
               >
                 Onam Contest
-              </a> */}
+              </a>  */}
+            </p>
+            <p className="text-[10px] md:text-xl text-[rgb(234,91,33)]">
+              Orders once booked cannot be cancelled and are non-refundable.
             </p>
           </div>
         </div>
