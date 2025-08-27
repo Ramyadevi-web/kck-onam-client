@@ -10,19 +10,19 @@ export default function PayasamSection() {
       name: 'Ada Pradhaman',
       price: '₹500',
       image: '/images/ada.webp',
-      description: 'A divine delight symbolising tradition and celebration, Thick rice ada cooked in rich and creamy coconut milk and sweetened with Marayoor jaggery. Kadhai pazham - native Kerala banana added to enhance the aroma of the pradhaman'
+      description: 'A divine delight symbolising tradition and celebration, thick rice ada cooked in rich and creamy coconut milk and sweetened with Marayoor jaggery. Kadhazhi pazham - native Kerala banana added to enhance the aroma of the pradhaman'
     },
     {
       name: 'Chakka Pradhaman',
       price: '₹700',
       image: '/images/chakka.webp',
-      description: 'Slow cooked  ripened jackfruit the most loved fruit in every house of kerala, garnished with Marayoor jaggery, and rich creamy coconut.'
+      description: 'Ripened jackfruit, the most loved fruit in every house of kerala, slow cooked with Marayoor jaggery and rich creamy coconut milk - a welcome addition to your Onam celebrations.'
     },
     {
       name: 'Parippu Payasam',
       price: '₹500',
       image: '/images/parippu.webp',
-      description: 'A divine blend of roasted moong dal cooked to perfection with Marayoor jaggery and coconut milk, a classic festive delicacy on Onam.'
+      description: 'A divine blend of roasted moong dal cooked to perfection with Marayoor jaggery and coconut milk, a classic Onam delicacy.'
     }
   ];
 
@@ -99,15 +99,14 @@ export default function PayasamSection() {
                   />
                   <div className="px-3">
                     <h6 className="text-warning text-center" data-testid="text-payasam-combo-name">Payasam Combo (All 4)</h6>
-                    <p className="text-warning text-center mb-1">500 ML x 4 SERVED FRESH.</p>
+                   <p className="flex justify-center"><span className="text-[rgb(234,91,33)] line-through text-center mb-1">₹2200</span> 
+                   &nbsp; &nbsp; <span>₹2000</span>
+                   </p>
                   </div>
                 </div>
       </div>
       <div className="flex flex-col md:flex-row text-[9px] md:text-base px-3 md:px-5 py-2 overflow-hidden combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
-                <strong className="font-bold !px-2 md:!px-4">Combo Pack Special: Get all 4 varieties for &nbsp;
-                 <span className="text-[rgb(234,91,33)] line-through">₹2200</span>&nbsp;&nbsp;
-                  <span className="text-black">₹2000</span> </strong> 
-                {/* <small className="text-decoration-line-through">(Save ₹60!)</small> */}
+                  <p className="mx-auto fw-bold">500 ML X 4 SERVED FRESH</p>
       </div>
       </div>
     </div>
