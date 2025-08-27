@@ -9,6 +9,7 @@ import PickupLocationsSection from '@/components/PickupLocationsSection';
 import Footer from '@/components/Footer';
 import TermsModal from '@/components/modals/TermsModal';
 import LogoDiv from '@/components/LogoDiv';
+import OnamContest from '@/components/OnamContest';
 
 export default function Home() {
   const [notificationVisible, setNotificationVisible] = useState(true);
@@ -16,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['onasadhya', 'payasam', 'giftbox', 'bulk-order'];
+      const sections = ['onasadhya', 'payasam', 'giftbox', 'onamcontest', 'bulk-order'];
       const offset = notificationVisible ? 140 : 80;
       
       let current = '';
@@ -55,6 +56,7 @@ export default function Home() {
       <OnasadhyaSection />
       <PayasamSection />
       <GiftBoxSection />
+      <OnamContest/>
       <BulkOrderSection />
       <PickupLocationsSection />
       <Footer />

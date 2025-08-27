@@ -79,19 +79,15 @@ export default function TermsModal() {
               <div className="p-3">
                 <h6 className="text-warning" data-testid="text-onam-contest-rules-title">Contest Rules & Regulations</h6>
                 <ul className="list-unstyled" data-testid="list-onam-contest-terms">
-                  <li className="mb-2">• The entry for Photograph to Postcards contest is acceptable only on 4th & 5th, September 2025.</li>
-                  <li className="mb-2">• The contest is open for anyone celebrating Onam at home</li>
+                  <li className="mb-2">• The entry for KCK Onam at Home Contest 2025 is acceptable till September 05, 2025. </li>
+                  <li className="mb-2">• The contest is open for anyone celebrating Onam at home.</li>
                   <li className="mb-2">• The employees of Kappa Chakka Kandhari or family members are not eligible to participate in the contest.</li>
                   <li className="mb-2">• The entries that do not adhere to the terms and conditions of contest will be eliminated.</li>
-                  <li className="mb-2">• Multiple entries are not allowed for the contest.</li>
                   <li className="mb-2">• Entries will be judged based on the creativity, relevance, and originality.</li>
                   <li className="mb-2">• The winners of the contest will receive an official email. </li>
                   <li className="mb-2">• Entries that do not comply with these terms will be disqualified.</li>
-                  <li className="mb-2">• Any disputes will be subject to the jurisdiction of courts.</li>
+                  <li className="mb-2">• Any disputes will be subject to the jurisdiction of courts in Chennai.</li>
                 </ul>
-                <p className="mt-3 text-muted small" data-testid="text-onam-contest-disclaimer">
-                  Contest decisions are final. No correspondence will be entertained regarding contest results.
-                </p>
               </div>
             </div>
             <div className="modal-footer">

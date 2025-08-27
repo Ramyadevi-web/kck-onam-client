@@ -167,7 +167,7 @@
   content: "";
   display: block;
   height: 1px;
-  background: #facc15; /* Tailwind yellow-400 */
+  background: #facc15;/* Tailwind yellow-400 */
   margin-top: 8px;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(250, 204, 21, 0.5);
@@ -188,8 +188,24 @@
   font-weight: 700;
 }
 
+.win-text-highlight{
+   font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 0 0 5px #0e0404, 0 0 10px #ffcc00, 0 0 15px #ff9900;
+  animation: pulse 2s infinite;
+}
+
 .description{
   font-weight: 300;
+}
+
+/* .contest-logo{
+  width: 50%;
+} */
+
+
+.prize-package{
+   font-size: 1.2rem !important;
 }
 
 .brand-btn {

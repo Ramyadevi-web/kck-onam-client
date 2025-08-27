@@ -55,7 +55,7 @@ export default function Navigation({ notificationVisible, activeSection }: Navig
         <ul className={`flex-col lg:flex-row lg:flex space-y-4 lg:space-y-0 lg:space-x-8 absolute lg:static top-full left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'}`}>
           <li>
             <a
-              className={`block px-4 py-2  hover:text-yellow-400 transition ${activeSection === 'onasadhya' ? 'font-weight-bold nav-active' : ''}`}
+              className={`block px-4 py-2  hover:text-yellow-400 transition ${activeSection === 'onasadhya' ? 'font-bold nav-active' : ''}`}
               href="#onasadhya"
               onClick={(e) => scrollToSection('onasadhya', e)}
               data-testid="link-nav-onasadhya"
@@ -80,9 +80,20 @@ export default function Navigation({ notificationVisible, activeSection }: Navig
               onClick={(e) => scrollToSection('giftbox', e)}
               data-testid="link-nav-giftbox"
             >
-              GIFTBOX
+              KCK GIFT BOX
             </a>
           </li>
+           <li>
+            <a
+              className={`block px-4 py-2 hover:text-yellow-400 transition ${activeSection === 'onamcontest' ? 'font-bold  nav-active' : ''}`}
+              href="#onamcontest"
+              onClick={(e) => scrollToSection('onamcontest', e)}
+              data-testid="link-nav-onamcontest"
+            >
+              KCK ONAM CONTEST
+            </a>
+          </li>
+
           <li>
             <a
               className={`block px-4 py-2 hover:text-yellow-400 transition ${activeSection === 'bulk-order' ? 'font-bold  nav-active' : ''}`}
