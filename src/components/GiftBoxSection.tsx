@@ -29,9 +29,11 @@ export default function GiftBoxSection() {
             <span className='flex items-center text-[rgb(231,91,33)] text-lg font-light'>(₹1900)</span>
             </div>
             <p className="text-warning mb-3 text-center text-xs md:text-lg" data-testid="text-gift-box-availability">Available for take-away on Sept 4 & 5, 2025</p>
-            <p className="description mb-4 text-xs px-3 md:text-lg" data-testid="text-gift-box-description">
+            <p className="description mb-1 text-xs px-3 md:text-lg" data-testid="text-gift-box-description">
               A special gift in a gift box, with the finest spices sourced from the heart of Kerala. Ranging from mace to marayoor jaggery, 8 condiments to spice up your cooking.
-              Additionally, 2 Onam gift vouchers of INR 750 each, which can be redeemed on your next dine-in with Kappa Chakka Kandhari- Chennai & Bangalore.
+            </p>
+            <p className="description mb-4 text-xs px-3 md:text-lg">
+               Additionally, 2 Onam gift vouchers of INR 750 each, that can be redeemed on your next dine-in with Kappa Chakka Kandhari- Chennai & Bangalore.
             </p>
                         <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
               <a 

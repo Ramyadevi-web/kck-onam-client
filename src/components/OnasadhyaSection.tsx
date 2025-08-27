@@ -7,7 +7,7 @@ export default function OnasadhyaSection() {
   'Cheru Pazham','Sharkara Varatty',
    'Cabbage Thoran', 'Pineapple Pachadi', 'Avial',
    'Olan', 'Kootu Kari', 'Inji Puli', 'Beetroot Kichadi', 'Nendrakai Nuruku',
-   'Pavakka Kondattam', 'Payar Kondattam', 'Rice', 'Pappadam',
+   'Pavakka Kondattam', 'Payaru Kondattam', 'Rice', 'Pappadam',
    'Nei-Parippu',  'Kalan', 'Ada Pradhaman',
    'Palada Payasam', 'Chakka Pradhaman', 'Parippu Payasam'
   ];
