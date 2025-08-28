@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export default function OnasadhyaSection() {
   const [showExtraContent, setShowExtraContent] = useState(false);
@@ -21,6 +21,21 @@ export default function OnasadhyaSection() {
     setShowExtraContent(!showExtraContent);
   };
 
+  const videoRef = useRef<HTMLVideoElement | null>(null);  //Typescript doesn't know that the videoRef.current is HTMLElement
+      const [playing , setPlaying] = useState(false);
+    
+      const handlePlay = () => {
+        if(videoRef.current){
+          videoRef.current.play()
+          .then(()=>{
+            setPlaying(true)
+          })
+          .catch((err)=>{
+            console.log("Error in handlePlay", err)
+          });
+        }
+      }
+
   return (
     <section id="onasadhya" className="main-section">
       <div className="container">
@@ -32,6 +47,24 @@ export default function OnasadhyaSection() {
               className="img-fluid rounded-3 shadow-lg"
               data-testid="img-onasadhya-feast"
             />
+
+            <div className="mx-auto w-1/2">
+              <div className=" flex relative mt-5 justify-center items-center" 
+              style={{width:'100%', maxWidth:'320px', aspectRatio: '9 / 16', position: 'relative'}}>
+                <video ref={videoRef} controls = {playing} preload="none" poster="/thumbnail/onaThumb.webp" 
+                className="w-full h-full object-cover rounded-lg shadow-lg">
+                  <source src="/videos/Onasadhya.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
+
+                {
+                  !playing && (<button onClick={handlePlay} className="play-button">
+                    ▶
+                  </button>)
+                }
+              </div>
+            </div>
+
           </div>
           <div className="col-lg-6">
             <div className='flex justify-center items-center gap-2 mb-1'>

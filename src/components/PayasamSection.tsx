@@ -1,3 +1,5 @@
+import { useState , useRef } from "react";
+
 export default function PayasamSection() {
   const payasamProducts = [
     {
@@ -25,6 +27,21 @@ export default function PayasamSection() {
       description: 'A divine blend of roasted moong dal cooked to perfection with Marayoor jaggery and coconut milk, a classic Onam delicacy.'
     }
   ];
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);  //Typescript doesn't know that the videoRef.current is HTMLElement
+  const [playing , setPlaying] = useState(false);
+
+  const handlePlay = () => {
+    if(videoRef.current){
+      videoRef.current.play()
+      .then(()=>{
+        setPlaying(true)
+      })
+      .catch((err)=>{
+        console.log("Error in handlePlay", err)
+      });
+    }
+  }
 
   return (
    <section id="payasam" className="main-section">
@@ -90,7 +107,7 @@ export default function PayasamSection() {
 
      <div className="flex flex-col flex-md-row items-center">
      <div className="col-12 col-md-6 mb-3 mb-md-0">
-                <div className="payasam-card" data-testid="card-payasam-combo">
+                <div className="payasam-card mb-2" data-testid="card-payasam-combo">
                   <img 
                     src="/images/combo.webp" 
                     alt="Payasam Combo Pack - All varieties"
@@ -104,9 +121,9 @@ export default function PayasamSection() {
                    </p>
                   </div>
                 </div>
-      </div>
-      <div className="flex flex-col">
-      <div className="w-screen md:w-full text-[9px] md:text-base px-3 md:px-5 py-2 mb-5 overflow-hidden text-center combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
+                
+
+                <div className="w-screen md:w-full text-[9px] md:text-base px-3 md:px-5 py-2 mb-4 overflow-hidden text-center combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
                   <p className="fw-bold w-full">500 ML X 4 SERVED FRESH</p>
       </div>
 
@@ -126,9 +143,29 @@ export default function PayasamSection() {
               >
                 Book Now - Chennai
               </a>
+      </div>
+      </div>
+      <div className="flex flex-col justify-center items-center w-1/2">
+        <div className=" flex relative mt-5 justify-center items-center" 
+        style={{width:'100%', maxWidth:'320px', aspectRatio: '9 / 16', position: 'relative'}}>
+           <video ref={videoRef} controls = {playing} preload="none" poster="/thumbnail/payasamThumb.webp" 
+           className="w-full h-full object-cover rounded-lg shadow-lg">
+            <source src="/videos/Payasamlow.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+           </video>
+
+           {
+            !playing && (<button onClick={handlePlay} className="play-button">
+               ▶
+            </button>)
+           }
         </div>
        </div>
       </div>
+{/*       
+      <div className="container">
+       
+      </div> */}
     </div>
   </div>
 </section>

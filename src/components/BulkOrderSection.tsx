@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 export default function BulkOrderSection() {
   const [formData, setFormData] = useState({
@@ -143,17 +143,62 @@ export default function BulkOrderSection() {
     }
   };
 
+   const videoRef = useRef<HTMLVideoElement | null>(null);  //Typescript doesn't know that the videoRef.current is HTMLElement
+    const [playing , setPlaying] = useState(false);
+  
+    const handlePlay = () => {
+      if(videoRef.current){
+        videoRef.current.play()
+        .then(()=>{
+          setPlaying(true)
+        })
+        .catch((err)=>{
+          console.log("Error in handlePlay", err)
+        });
+      }
+    }
+  
+
   return (
     <section id="bulk-order" className="main-section">
       <div className="container">
         <div className="row align-items-start">
-          <div className="col-lg-6 mb-4 mb-lg-0  flex items-center">
+          <div className="col-lg-6 mb-4 mb-lg-0  flex flex-col items-center">
             <img 
               src="\images\banquets.webp" 
               alt="Professional catering service for bulk orders" 
               className="img-fluid rounded-3 shadow-lg"
               data-testid="img-bulk-order"
             />
+
+            {/* Marketting Video */}
+      
+            <div 
+  className="flex relative mt-5 justify-center items-center" 
+  style={{ width: '100%', maxWidth: '320px', aspectRatio: '9/16', position: 'relative', minHeight: '200px' }}
+>
+  <video 
+    ref={videoRef} 
+    controls 
+    preload="none" 
+    poster="/thumbnail/corporateThumb.webp"
+    className="w-full h-full object-cover rounded-lg shadow-lg"
+  >
+    <source src="/videos/corporate.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  {!playing && (
+    <button 
+      onClick={handlePlay} 
+      className="play-button absolute inset-0 flex items-center justify-center text-white text-3xl bg-black/50 rounded-full"
+    >
+      ▶
+    </button>
+  )}
+</div>
+     
+ 
           </div>
           <div className="col-lg-6">
             <h1 className="section-heading mb-2 flex justify-center" data-testid="text-bulk-order-title">Bulk Order</h1>

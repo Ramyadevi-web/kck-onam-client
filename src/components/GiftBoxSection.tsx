@@ -1,3 +1,5 @@
+import {useRef, useState} from 'react'
+
 export default function GiftBoxSection() {
   const giftBoxContents = [
     { name: 'Marayur Jaggery', clickable: false },
@@ -11,18 +13,55 @@ export default function GiftBoxSection() {
     { name: 'KCK Gift Vouchers(₹750)-2Nos.', clickable: false }
   ];
 
+   const videoRef = useRef<HTMLVideoElement | null>(null);  //Typescript doesn't know that the videoRef.current is HTMLElement
+    const [playing , setPlaying] = useState(false);
+  
+    const handlePlay = () => {
+      if(videoRef.current){
+        videoRef.current.play()
+        .then(()=>{
+          setPlaying(true)
+        })
+        .catch((err)=>{
+          console.log("Error in handlePlay", err)
+        });
+      }
+    }
+  
+
   return (
     <section id="giftbox" className="main-section">
       <div className="container">
         <div className="row align-items-center">
+
+          {/* Left Hand Side */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img 
               src="images/gift_box.webp" 
               alt="Premium Kerala gift box with traditional items" 
-              className="img-fluid rounded-3 shadow-lg"
+              className="rounded-3 shadow-lg w-1/2 mx-auto"
               data-testid="img-gift-box"
             />
+
+            <div className="relative mt-5 mx-auto" 
+            style={{width:'100%', maxWidth:'320px', aspectRatio: '9 / 16', position: 'relative'}}>
+             <video ref={videoRef} controls = {playing} preload="none" poster="/thumbnail/giftThumb.webp" 
+              className="w-full h-full object-cover rounded-lg shadow-lg">
+              <source src="/videos/Giftboxvideo.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+              </video>
+
+              {
+                !playing && (<button onClick={handlePlay} className="play-button">
+                  ▶
+                </button>)
+           }
+        </div>
+
+
           </div>
+
+          {/* Right Hand Side */}
           <div className="col-lg-6">
             <div className='flex justify-center items-center gap-2 mb-1'>
             <h1 className="section-heading" data-testid="text-gift-box-title">KCK Gift Box</h1>
