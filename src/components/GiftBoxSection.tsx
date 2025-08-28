@@ -51,6 +51,10 @@ export default function GiftBoxSection() {
                 Book Now - Chennai
               </a>
             </div>
+            
+        <div className='flex justify-center mt-3 text-warning text-xs md:text-base'>
+              <a href='https://www.instagram.com/reel/DNqRu36MykB/?igsh=azJ5dmw4d2E3c3Ey' target='_blank'>Click here to explore KCK Gift Box</a>
+        </div>
 
             <div className="box-content ">
               <h4 className="text-warning  flex justify-center mb-4" data-testid="text-gift-box-content-title">Gift Box Contents</h4>

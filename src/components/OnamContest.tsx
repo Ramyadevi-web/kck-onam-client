@@ -100,9 +100,9 @@ export default function OnamContest() {
                 data-testid="img-cruise" 
               />
 
-              <h1 className="text-warning text-center mt-5 prize-package mb-2" data-testid="text-prize-package">
+              <h3 className="text-warning text-center text-xs md:text-sm mt-5 mb-2" data-testid="text-prize-package">
                 Prize Package - 2-night stay in Kerala (family of 4)
-              </h1>
+              </h3>
 
               <ul className="px-4">
                 <li className="flex items-start gap-3 mb-3">
@@ -125,9 +125,6 @@ export default function OnamContest() {
         </div>
       </div>
       </div>
-    </section>
-
- 
-   
+    </section>  
   );
 }

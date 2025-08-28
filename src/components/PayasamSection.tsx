@@ -127,6 +127,9 @@ export default function PayasamSection() {
                 Book Now - Chennai
               </a>
         </div>
+        <div className='flex justify-center mt-3 text-warning text-xs md:text-base'>
+              <a href='https://www.instagram.com/reel/DNk8E5_pLQ3/?igsh=MXZ0MndtN2YybGM2bg%3D%3D' target='_blank'>Click here to explore KCK Payasam</a>
+        </div>
        </div>
       </div>
     </div>

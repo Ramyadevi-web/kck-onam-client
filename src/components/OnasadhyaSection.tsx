@@ -40,7 +40,7 @@ export default function OnasadhyaSection() {
             </div>
            
             <p className="text-[rgb(255,188,12)] flex justify-center text-sm md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Serves 5–6 pax.</p>
-             <p className="text-[rgb(255,188,12)] mb-3 flex justify-center text-sm md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Available for take-away on Sept 4 & 5, 2025.</p>
+             <p className="text-[rgb(255,188,12)] mb-3 flex justify-center text-xs md:text-base lg:text-base xl:text-lg" data-testid="text-onasadhya-price">Available for take-away on Sept 4 & 5, 2025.</p>
             <p className="description mb-4 text-xs px-3 md:text-lg" data-testid="text-onasadhya-description">
               Some festivals are meant to be celebrated where they began - at home! 
                This Onam, unwrap our carefully curated vegetarian delicacies, prepared by seasoned Kerala cooks and packed with care. 
@@ -65,9 +65,12 @@ export default function OnasadhyaSection() {
                 Book Now - Chennai
               </a>
             </div>
+            <div className='flex justify-center mt-3 text-warning text-xs md:text-base'>
+              <a href='https://www.instagram.com/reel/DNib1UKpRhU/?igsh=MWMyeTI3aGc0cnprMg%3D%3D' target='_blank'>Click here to explore KCK Onasadhya</a>
+            </div>
 
             <div className="box-content">
-              <h4 className="text-[rgb(255,188,12)] mb-0 md:mb-4 text-center" data-testid="text-box-content-title">Jumbo KCK Onasadhya (26 Items)</h4>
+              <h4 className="text-[rgb(255,188,12)] mb-0 md:mb-4 text-center text-xs md:text-base" data-testid="text-box-content-title">Jumbo KCK Onasadhya (26 Items)</h4>
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-2">
                 {
                   mainItems.map((item, index) => {
