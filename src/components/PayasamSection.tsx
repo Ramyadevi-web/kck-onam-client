@@ -51,7 +51,7 @@ export default function PayasamSection() {
               ))}
             </div>
           </div>
-          <div className="col-md-6" id="payasam-div">
+          <div className="col-md-6">
             <h1 className="section-heading text-center">Onam Special Payasam</h1>
             <p className="text-warning text-center text-xs md:text-lg">500 ML SERVED FRESH.</p>
             <p className="text-warning text-center mb-4 text-xs md:text-lg">Available for take-away on Sept 4 & 5, 2025.</p>
@@ -77,7 +77,7 @@ export default function PayasamSection() {
             <img
               src={product.image}
               alt={product.name}
-              className="img-fluid mb-2"
+              className="img-fluid mb-2 mx-auto"
               data-tesid={`img-payasam-${index}`}
             />
             <h5 className="text-warning mb-1">
@@ -105,9 +105,29 @@ export default function PayasamSection() {
                   </div>
                 </div>
       </div>
-      <div className="flex flex-col md:flex-row text-[9px] md:text-base px-3 md:px-5 py-2 overflow-hidden combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
-                  <p className="mx-auto fw-bold">500 ML X 4 SERVED FRESH</p>
+      <div className="flex flex-col">
+      <div className="w-screen md:w-full text-[9px] md:text-base px-3 md:px-5 py-2 mb-5 overflow-hidden text-center combo w-full bg-cover bg-center bg-no-repeat" data-testid="alert-combo-special">
+                  <p className="fw-bold w-full">500 ML X 4 SERVED FRESH</p>
       </div>
+
+      
+      <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
+              <a 
+                href="https://kappachakkakandhari.uengage.in/"  rel="noopener noreferrer" target="_blank"
+                className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
+                data-testid="button-book-bengaluru"
+              >
+                Book Now - Bengaluru
+              </a>
+              <a 
+                href="https://kappachakkakandhari.uengage.in/"  rel="noopener noreferrer" target="_blank"
+                className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
+                data-testid="button-book-chennai"
+              >
+                Book Now - Chennai
+              </a>
+        </div>
+       </div>
       </div>
     </div>
   </div>
