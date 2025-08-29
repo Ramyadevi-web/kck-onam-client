@@ -236,19 +236,6 @@
   border-bottom: none;
 }
 
-/* Payasam Grid */
-/* .payasam-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
-} */
-
-/* .payasam-card:hover {
-  transform: translateY(-5px);
-} */
-
  #img-payasam-0{
   height: 81% !important;
 } 

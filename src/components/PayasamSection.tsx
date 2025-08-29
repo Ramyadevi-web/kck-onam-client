@@ -1,3 +1,5 @@
+import VideoButton from "./VideoButton";
+
 export default function PayasamSection() {
   const payasamProducts = [
     {
@@ -55,6 +57,7 @@ export default function PayasamSection() {
             <h1 className="section-heading text-center">Onam Special Payasam</h1>
             <p className="text-warning text-center text-xs md:text-lg">500 ML SERVED FRESH.</p>
             <p className="text-warning text-center mb-4 text-xs md:text-lg">Available for take-away on Sept 4 & 5, 2025.</p>
+            <VideoButton  source="payasam"/>
             {payasamProducts.map((product, index) => (
               <div key={index} className="mb-5">
                 <h5 className="text-warning">
@@ -126,9 +129,6 @@ export default function PayasamSection() {
               >
                 Book Now - Chennai
               </a>
-        </div>
-        <div className='flex justify-center mt-3 text-warning text-xs md:text-base'>
-              <a href='https://www.instagram.com/reel/DNk8E5_pLQ3/?igsh=MXZ0MndtN2YybGM2bg%3D%3D' target='_blank'>Click here to explore KCK Payasam</a>
         </div>
        </div>
       </div>

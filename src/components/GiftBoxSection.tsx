@@ -1,3 +1,5 @@
+import VideoButton from "./VideoButton";
+
 export default function GiftBoxSection() {
   const giftBoxContents = [
     { name: 'Marayur Jaggery', clickable: false },
@@ -29,6 +31,9 @@ export default function GiftBoxSection() {
             <span className='flex items-center text-[rgb(231,91,33)] text-lg font-light'>(₹1900)</span>
             </div>
             <p className="text-warning mb-3 text-center text-xs md:text-lg" data-testid="text-gift-box-availability">Available for take-away on Sept 4 & 5, 2025</p>
+    
+              <VideoButton  source="giftBox"/>
+
             <p className="description mb-1 text-xs px-3 md:text-lg" data-testid="text-gift-box-description">
               A special gift in a gift box, with the finest spices sourced from the heart of Kerala. Ranging from mace to marayoor jaggery, 8 condiments to spice up your cooking.
             </p>
@@ -51,11 +56,7 @@ export default function GiftBoxSection() {
                 Book Now - Chennai
               </a>
             </div>
-            
-        <div className='flex justify-center mt-3 text-warning text-xs md:text-base'>
-              <a href='https://www.instagram.com/reel/DNqRu36MykB/?igsh=azJ5dmw4d2E3c3Ey' target='_blank'>Click here to explore KCK Gift Box</a>
-        </div>
-
+          
             <div className="box-content ">
               <h4 className="text-warning  flex justify-center mb-4" data-testid="text-gift-box-content-title">Gift Box Contents</h4>
               <div className="row">

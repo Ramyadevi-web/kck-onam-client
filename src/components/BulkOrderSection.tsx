@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import VideoButton from './VideoButton';
+
 
 export default function BulkOrderSection() {
   const [formData, setFormData] = useState({
@@ -154,9 +156,7 @@ export default function BulkOrderSection() {
               className="img-fluid rounded-3 shadow-lg"
               data-testid="img-bulk-order"
             />
-            <div className='flex justify-center mt-3 text-warning text-xs md:text-base'>
-              <a href='https://www.instagram.com/reel/DNnkcqVMFnF/?igsh=MXdmbmV3NGxhc2lqMA%3D%3D' target='_blank'>Click here to explore KCK Payasam</a>
-        </div>
+            <VideoButton  source="bulkOrder"/>
           </div>
           <div className="col-lg-6">
             <h1 className="section-heading mb-2 flex justify-center" data-testid="text-bulk-order-title">Bulk Order</h1>
