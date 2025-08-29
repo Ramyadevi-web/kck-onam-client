@@ -17,13 +17,25 @@ export default function GiftBoxSection() {
     <section id="giftbox" className="main-section">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6 mb-4 mb-lg-0">
-            <img 
-              src="images/gift_box.webp" 
-              alt="Premium Kerala gift box with traditional items" 
-              className="img-fluid rounded-3 shadow-lg"
-              data-testid="img-gift-box"
-            />
+          <div className="col-lg-6 mb-4 mb-lg-0 relative">
+             
+       
+ 
+                <img 
+                  src="images/gift_box.webp" 
+                  alt="Premium Kerala gift box with traditional items" 
+                  className="rounded-3 shadow-lg w-full mx-auto"
+                  data-testid="img-gift-box"
+                />
+
+                <img 
+                  src="images/sold-out.webp" 
+                  alt="Sold Out" 
+                  className="absolute top-1/2 left-1/2 w-[75%] opacity-1 transform -translate-x-1/2 -translate-y-1/2 opacity-90"
+                  data-testid="img-sold-out"
+                />
+              
+
           </div>
           <div className="col-lg-6">
             <div className='flex justify-center items-center gap-2 mb-1'>
