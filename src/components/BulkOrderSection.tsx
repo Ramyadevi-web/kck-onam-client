@@ -156,10 +156,11 @@ export default function BulkOrderSection() {
               className="img-fluid rounded-3 shadow-lg"
               data-testid="img-bulk-order"
             />
-            <VideoButton  source="bulkOrder"/>
+         
           </div>
           <div className="col-lg-6">
-            <h1 className="section-heading mb-2 flex justify-center" data-testid="text-bulk-order-title">Bulk Order</h1>
+            <h1 className="section-heading flex justify-center" data-testid="text-bulk-order-title">Bulk Order</h1>
+               <VideoButton  source="bulkOrder"/>
             <p className="description text-xs px-3 md:text-lg mb-2" data-testid="text-bulk-order-description">
               Celebrate the spirit of Onam with your friends, family, or colleagues - whether at home or at your workplace. 
               Choose from our specially curated Sadhya,  just the way you like it, or indulge in our delicious varieties of payasam.

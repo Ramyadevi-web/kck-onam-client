@@ -75,6 +75,7 @@ export default function PayasamSection() {
         <h1 className="section-heading text-center">Onam Special Payasam</h1>
         <p className="text-warning text-center mb-1">500 ML SERVED FRESH.</p>
         <p className="text-warning text-center mb-4 text-sm">Available for take-away on Sept 4 & 5, 2025.</p>
+         <VideoButton  source="payasam"/>
         {payasamProducts.map((product, index) => (
           <div key={index} className="mb-4 text-center">
             <img

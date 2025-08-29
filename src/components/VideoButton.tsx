@@ -25,7 +25,7 @@ export default function VideoButton({ source }: VideoButtonProps ) {
       rel="noopener noreferrer"
       className="flex flex-col items-center text-lg leading-tight"
     >
-      <div className="relative flex items-center justify-center w-[90px] h-[90px]">
+      <div className="relative flex items-center justify-center">
         <MdOutlineVideocam size={90} color="rgb(231,91,33)" />
         <FaPlay
           size={20}
@@ -33,7 +33,7 @@ export default function VideoButton({ source }: VideoButtonProps ) {
           className="absolute  left-0.8 top-1/2 -translate-x-[40%] -translate-y-1/2"
         />
       </div>
-      <span className="-mt-2 text-[rgb(231,91,33)]" >Click here</span>
+      <span className="-mt-5 text-[rgb(231,91,33)]" >Click here</span>
     </a>
   );
 }
