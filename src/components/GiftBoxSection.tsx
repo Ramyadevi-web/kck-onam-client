@@ -52,7 +52,7 @@ export default function GiftBoxSection() {
             <p className="description mb-4 text-xs px-3 md:text-lg">
                Additionally, 2 Onam gift vouchers of INR 750 each, that can be redeemed on your next dine-in with Kappa Chakka Kandhari- Chennai & Bangalore.
             </p>
-                        <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
+                        {/* <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
               <a 
                 href="https://kappachakkakandhari.uengage.in/" rel="noopener noreferrer" target="_blank" 
                 className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
@@ -67,7 +67,7 @@ export default function GiftBoxSection() {
               >
                 Book Now - Chennai
               </a>
-            </div>
+            </div> */}
           
             <div className="box-content ">
               <h4 className="text-warning  flex justify-center mb-4" data-testid="text-gift-box-content-title">Gift Box Contents</h4>
