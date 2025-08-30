@@ -346,7 +346,7 @@ export default function BulkOrderSection() {
               </div>
               <div className='flex justify-center items-center'>
               <button type="submit" className="brand-btn" data-testid="button-submit-bulk-order">
-                SUBMIT FORM <i className="fas fa-paper-plane ms-2"></i>
+                BULK ENQUIRY FORM <i className="fas fa-paper-plane ms-2"></i>
               </button>
               </div>
             </form>
