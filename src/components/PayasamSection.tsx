@@ -124,7 +124,7 @@ export default function PayasamSection() {
                 Book Now - Bengaluru
               </a>
               <a 
-                href="https://kappachakkakandhari.uengage.in/"  rel="noopener noreferrer" target="_blank"
+                href="https://link.zomato.com/xqzv/gu0hy3gm"  rel="noopener noreferrer" target="_blank"
                 className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
                 data-testid="button-book-chennai"
               >
