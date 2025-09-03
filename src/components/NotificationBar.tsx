@@ -6,7 +6,7 @@ interface NotificationBarProps {
 export default function NotificationBar({ visible, onClose }: NotificationBarProps) {
   return (
     <div className={`notification-bar fixed top-0 left-0 w-full h-12 sm:h-14 md:h-18 lg:h-14   px-2 sm:px-5 md:px-7 lg:px-10 flex items-center bg-yellow-400 z-50 transition-all duration-300 ${!visible ? 'hidden' : ''}`} id="notificationBar">
-      <div className="flex  justify-between items-center w-full font-normal text-xs sm:text-xs md:text-base lg:text-xl">
+      <div className="flex  justify-between items-center w-full font-normal text-[9px] sm:text-xs md:text-base lg:text-xl">
         <span className="text-center flex flex-col w-full">
           Now, with the convenience of 3 take-away locations in Chennai & Bengaluru on
           Sept 4 & 5, 2025.
