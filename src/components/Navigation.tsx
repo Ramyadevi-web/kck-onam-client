@@ -24,7 +24,7 @@ export default function Navigation({ notificationVisible, activeSection }: Navig
 
   return (
     <nav
-      className={`fixed left-0 w-full bg-black shadow ${notificationVisible ? 'pt-15' : 'pt-2'}`}
+      className={`fixed left-0 w-full bg-black mt-2 shadow ${notificationVisible ? 'pt-15' : 'pt-2'}`}
       id="mainNavbar"
       style={{
         top: notificationVisible ? '44px' : '0px'
