@@ -56,14 +56,14 @@ export default function OnasadhyaSection() {
             </div>
             <div className=" flex flex-col md:flex-row justify-center items-center gap-4">
               <a 
-                href="#"  rel="noopener noreferrer" target="_blank"
+                href="#"  rel="noopener noreferrer" 
                 className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
                 data-testid="button-book-bengaluru"
               >
                 Book Now - Bengaluru
               </a>
               <a 
-                href="#"  rel="noopener noreferrer" target="_blank"
+                href="#"  rel="noopener noreferrer" 
                 className="brand-btn whitespace-nowrap text-xs px-3 py-2 sm:px-4 sm:py-1  sm:text-xs md:text-sm lg:text-lg xl:text-xl"
                 data-testid="button-book-chennai"
               >
